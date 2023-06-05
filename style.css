@@ -12,6 +12,7 @@
 
 body{
     background-color: var(--charcoalGrey);
+    font-family: "Roboto";
 }
 
 #submit-btn {
