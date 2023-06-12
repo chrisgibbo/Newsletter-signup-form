@@ -20,4 +20,5 @@ body{
 }
 
 .submit-btn:hover{
-    background: linear-gradient(90deg, rgba(255,102,102,1) 65%, rgba(255,103,1,1) 91%);}
+    background: linear-gradient(90deg, rgba(255,102,102,1) 54%, rgba(255,103,1,1) 86%);
+}
