@@ -15,7 +15,7 @@
             <div class="mx-6 my-6 max-sm:mt-16">
                 <img class="h-10 max-sm:mt-28 max-sm:h-14 max-sm:mb-10" src="images/icon-list.svg" alt="orange-tick">
                 <h1 class="mt-5 text-4xl font-bold pb-6 max-xl:text-2xl max-sm:text-5xl max-sm:mt-6">Thanks for subscribing!</h1>
-                <p class="text-sm pb-6 max-sm:mb-24">A confirmation email has been sent to <span id="displayEmail"></span> 
+                <p class="text-sm pb-6 max-sm:mb-24">A confirmation email has been sent to <span id="emailDisplay"></span>,
                     Please open it and click the button inside to confirm your subscription.
                 </p>
             </div>
@@ -26,8 +26,12 @@
             </div>
         </div>
     </div>
-    
-    <script src="index.js"></script>
+
+    <script>
+        const email = sessionStorage.getItem('email');      
+        const emailDisplay = document.getElementById('emailDisplay');
+        emailDisplay.textContent = email;
+    </script>
 
 </body>
 </html>
