@@ -28,7 +28,9 @@
     </div>
 
     <script>
-        const email = sessionStorage.getItem('email');      
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+
         const emailDisplay = document.getElementById('emailDisplay');
         emailDisplay.textContent = email;
     </script>
