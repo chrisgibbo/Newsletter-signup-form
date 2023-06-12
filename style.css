@@ -16,7 +16,7 @@ body{
 }
 
 .submit-btn {
-    background-color: var(--darkSlateGrey);
+    background-color: var(--darkSlateGrey) !important;
 }
 
 .submit-btn:hover{
