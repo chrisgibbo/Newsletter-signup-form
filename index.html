@@ -63,9 +63,9 @@
           e.preventDefault();
       
           const email = emailInput.value;
-          sessionStorage.setItem('email', email);
+          const nextPageUrl = `subPage.html?email=${encodeURIComponent(email)}`;
       
-          window.location.href = 'subPage.html';
+          window.location.href = nextPageUrl;
         });
       </script>
 
